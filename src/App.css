@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.home-img{
+  border-radius: 50%;
+}
+a{
+  text-decoration-line: none;
+}
+.category{
+  width: 12rem;
+  text-align: center;
+  border-style: none;
+}
+.category:hover{
+  color:black;
+  width: 11rem;
+}
