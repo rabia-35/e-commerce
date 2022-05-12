@@ -1,28 +1,72 @@
-.App {
-  text-align: center;
-}
+
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(238, 233, 233);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-.home-img{
+.nav-css{
+  background-color: #ddd !important;
+}
+.category> img{
   border-radius: 50%;
+  width: 300px;
+  margin-bottom: 10%;
 }
 a{
   text-decoration-line: none;
 }
 .category{
-  width: 12rem;
+  margin-top: 10%;
   text-align: center;
-  border-style: none;
+}
+.category> h5{
+  margin-left: 3% ;
 }
 .category:hover{
   color:black;
-  width: 11rem;
+  background-color: #ddd;
+}
+.product-card{
+  width: 13rem;
+  margin-left: 9%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  padding: 2%;
+}
+.product-card:hover{
+  width: 12.5rem;
+  border: 2px solid rgb(183, 183, 183);
+  
+}
+.product-card>img{
+  width: 220px;
+  height: 250px;
+}
+.product-body{
+  font-size: smaller;
+  margin-top: -2%;
+  margin-bottom: -5%;
+}
+.btn-product{
+  width: 70%;
+  font-size: xx-small;
+  margin-bottom: 4%;
+}
+.orderbtn{
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  padding: 4%;
+}
+
+
+.detail-img{
+  width: 60%;
+  border-radius: 2%;
+  box-shadow: 40px -16px #ddd;
+
+}
+.detail-desc{
+  margin-left: -10%;
 }
