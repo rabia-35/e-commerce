@@ -46,7 +46,7 @@ import productJSON from "./product.json"
                  } 
                  localStorage.setItem("basket",JSON.stringify(orders))
              } 
-            
+            state.basket=JSON.parse(localStorage.getItem("basket"))
          },
          removeBasket:(state,action)=>{
             const id=action.payload
