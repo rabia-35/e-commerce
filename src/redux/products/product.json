@@ -2,34 +2,34 @@
         {
             "id":"1",
             "category":"Food",
-            "title":"Eti Karam Bitter Çikolata 60 G",
-            "img":"https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/07036372/07036372-b80d70-1650x1650.jpg",
-            "description":"Süt ürünü içerir.Eser miktarda Antep Fıstığı, Badem, Fındık, Gluten, Soya Ürünü ve Yer Fıstığı içerebilir.",
+            "title":"Food 1",
+            "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
+            "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":6,
             "piece":1
         },
         {
             "id":"2",
             "category":"Food",
-            "title":"Frapella Karamelize Bisküvi Kreması",
-            "img":"https://cdn.dsmcdn.com/ty335/product/media/images/20220217/16/51827500/389853943/1/1_org_zoom.jpg",
-            "description":"Enfes sürülebilir karamelize bisküvi kreması 320 gr.%58 bisküvi bulunmaktadır.Ürünlerimizin hiç birinde koruyucu yoktur.Ürünleriminizin hepsinde %100 pancar şekeri kullanılmıştır.",
+            "title":"Food 2",
+            "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
+            "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":40,
             "piece":1
         },
         {
             "id":"3",
             "category":"Food",
-            "title":"LEVANTE DELIGHT  Karışık Gurme Lokum ",
-            "img":"https://cdn.dsmcdn.com/ty403/product/media/images/20220419/11/94233179/448993605/1/1_org_zoom.jpg",
-            "description":"Asırlardır eşsiz lezzetini ve geleneksel ruhunu koruyan Türk lokumu şeflerimiz tarafından yenilendi. Seçilmiş malzemeleri bir araya getirdiğimiz Selection serisi tatlı ve ekşi arasında mükemmel bir denge sunar. Şeflerimiz sadece en iyi malzemeleri, sevgi dolu bir özenle ve geleneğe saygıyla kullanır.",
+            "title":"Food 3",
+            "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
+            "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":100,
             "piece":1
         },
         {
             "id":"4",
             "category":"Food",
-            "title":"Food 1",
+            "title":"Food 4",
             "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":50,
@@ -38,7 +38,7 @@
         {
             "id":"5",
             "category":"Food",
-            "title":"Food 2",
+            "title":"Food 5",
             "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":50,
@@ -47,7 +47,7 @@
         {
             "id":"6",
             "category":"Food",
-            "title":"Food 3",
+            "title":"Food 6",
             "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":50,
@@ -56,34 +56,34 @@
         {
             "id":"7",
             "category":"Beverage",
-            "title":"Tchibo Gold Öğütülmüş Filtre Kahve ",
-            "img":"https://www.tchibo.com.tr/newmedia/art_img/MAIN/f3db60f23b5b9518/gold-selection-ogutulmus-filtre-kahve-250g-tchibo.jpg",
-            "description":"Tchibo Gold Selection 250gr x 4 Adet Öğütülmüş Filtre Kahve, günün çok özel anlarına uygun eşsiz bir filtre kahve denyimi sunar.Tchibo, en verimli bölgelerin, yüksek kaliteli kahve çekirdeklerini seçer. ",
+            "title":"Beverage 1 ",
+            "img":"https://cdn-icons-png.flaticon.com/512/820/820603.png",
+            "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":100,
-            "piece":1
+            "piece":1  
         },
         {
             "id":"8",
             "category":"Beverage",
-            "title":"Lipton Ice Tea Şeftali Light 6X330 Ml",
-            "img":"https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/08059442/08059442-bd1387-1650x1650.jpg",
-            "description":"Lipton Ice Tea Light Şeftali Aromalı İçecek, özel formülü ile serinletici bir lezzet sunar. Koruyucu ve renklendirici içermez. Dayanılmaz ve hafif tadı ile ferahlatır. ",
+            "title":"Beverage 2",
+            "img":"https://cdn-icons-png.flaticon.com/512/820/820603.png",
+            "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":50,
             "piece":1
         },
         {
             "id":"9",
             "category":"Beverage",
-            "title":"Coca-Cola Zero Sugar 6X250 Ml Kutu",
-            "img":"https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/08019112/08019112-843f91-1650x1650.png",
-            "description":"Coca Cola Light Kutu Şekersiz, Klasik ve sevilen Coca-Cola tadını şekersiz bir şekilde sunar. 6'lı 250 ml'lik kutu ambalajı ile yanınızda kolayca taşıyabilirsiniz.",
+            "title":"Beverage 3",
+            "img":"https://cdn-icons-png.flaticon.com/512/820/820603.png",
+            "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":35,
             "piece":1
         },
         {
             "id":"10",
             "category":"Beverage",
-            "title":"Beverage 1",
+            "title":"Beverage 4",
             "img":"https://cdn-icons-png.flaticon.com/512/820/820603.png",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":20,
@@ -92,7 +92,7 @@
         {
             "id":"11",
             "category":"Beverage",
-            "title":"Beverage 2",
+            "title":"Beverage 5",
             "img":"https://cdn-icons-png.flaticon.com/512/820/820603.png",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":20,
@@ -101,7 +101,7 @@
         {
             "id":"12",
             "category":"Beverage",
-            "title":"Beverage 3",
+            "title":"Beverage 6",
             "img":"https://cdn-icons-png.flaticon.com/512/820/820603.png",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
             "price":20,
@@ -110,27 +110,27 @@
         {
             "id":"13",
             "category":"Technological",
-            "title":"Apple Macbook Air 13'' M1 8gb 256gb",
-            "img":"https://cdn.dsmcdn.com/ty209/product/media/images/20211025/14/155912969/117794442/1/1_org_zoom.jpg",
-            "description":"İşlemci Tipi-Apple M1 SSD, Kapasitesi - 256 GB, İşletim Sistemi - Mac Os, Ekran Kartı - Dahili Ekran Kartı, Kullanım Amacı - Ofis - İş, Ram (Sistem Belleği) - 8 GB",
+            "title":"Technological 1",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTvJNWJ39-FSd5tp6IeI_0U4ISAScc8goGXgW061IkQaSvHGb0ZVA6AN8XcDhi4kyeFZw&usqp=CAU",
+            "description":"Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is.",
             "price":13900,
             "piece":1
         },
         {
             "id":"14",
             "category":"Technological",
-            "title":"HyperX Cloud II Oyuncu Kulaklık ",
-            "img":"https://cdn.dsmcdn.com/ty301/product/media/images/20220121/12/31301869/13870166/1/1_org_zoom.jpg",
-            "description":"",
+            "title":"Technological 2",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTvJNWJ39-FSd5tp6IeI_0U4ISAScc8goGXgW061IkQaSvHGb0ZVA6AN8XcDhi4kyeFZw&usqp=CAU",
+            "description":"Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is.",
             "price":1500,
             "piece":1
         },
         {
             "id":"15",
             "category":"Technological",
-            "title":"Canon Eos 5d Mark Iv 24-105mm - Eurasia",
-            "img":"https://cdn.dsmcdn.com/ty266/product/media/images/20211208/10/7025112/332863721/1/1_org_zoom.jpg",
-            "description":"30.4MP Full-Frame CMOS Sensör DIGIC 6+ İşlemci 3.2' 1.62m-Dot Dokunmatik LCD Ekran DCI 4K Video 30 fps ve 8.8MP Still Grab 61-Point Yüksek Hassasiyetli AF Noktası Dual Pixel RAW AF Area Seçme Butonu",
+            "title":"Technological 3",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTvJNWJ39-FSd5tp6IeI_0U4ISAScc8goGXgW061IkQaSvHGb0ZVA6AN8XcDhi4kyeFZw&usqp=CAU",
+            "description":"Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is.",
             "price":59999 ,
             "piece":1
         },
@@ -138,7 +138,7 @@
             "id":"16",
             "category":"Technological",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTvJNWJ39-FSd5tp6IeI_0U4ISAScc8goGXgW061IkQaSvHGb0ZVA6AN8XcDhi4kyeFZw&usqp=CAU",
-            "title": "Technological 1",
+            "title": "Technological 4",
             "description": "Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is. ",
             "price": 9900,
             "piece":1
@@ -147,7 +147,7 @@
             "id":"17",
             "category":"Technological",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTvJNWJ39-FSd5tp6IeI_0U4ISAScc8goGXgW061IkQaSvHGb0ZVA6AN8XcDhi4kyeFZw&usqp=CAU",
-            "title": "Technological 2",
+            "title": "Technological 5",
             "description": "Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is.",
             "price": 9900,
             "piece":1
@@ -156,7 +156,7 @@
             "id":"18",
             "category":"Technological",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTvJNWJ39-FSd5tp6IeI_0U4ISAScc8goGXgW061IkQaSvHGb0ZVA6AN8XcDhi4kyeFZw&usqp=CAU",
-            "title": "Technological 3",
+            "title": "Technological 6",
             "description": "Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is.",
             "price": 9900,
             "piece":1
