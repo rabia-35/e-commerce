@@ -12,7 +12,7 @@ dispatch(filtered(category))
 }
 
   return (
-    <Container>
+    <Container >
       <Row xs={1} sm={3}  >
         <Col >
           <Link to={`/category/${items[5].category}`} onClick={()=>handleClick(items[5].category)} >
