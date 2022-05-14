@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .nav-css{
-  background-color: #ddd !important;
+  margin-bottom: 6%;
 }
 .category> img{
   border-radius: 50%;
@@ -35,31 +35,35 @@ a{
   padding: 2%;
 }
 .product-card:hover{
-  width: 12.5rem;
+  width: 12.3rem;
   border: 2px solid rgb(183, 183, 183);
   
 }
-.product-card>img{
-  width: 220px;
-  height: 250px;
-}
+
 .product-body{
-  font-size: smaller;
+  font-size: small;
   margin-top: -2%;
   margin-bottom: -5%;
+  color: black ;
 }
+
 .btn-product{
   width: 70%;
   font-size: xx-small;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
+  margin-top: 0.5% !important;
 }
 .orderbtn{
   display: flex;
   justify-content:center;
   text-align: center;
-  padding: 4%;
+  padding-left:8%;
 }
-
+.dropdown{
+  padding-left: 6%;
+  margin-bottom: 3%;
+  margin-top: 0%;
+}
 
 .detail-img{
   width: 60%;
