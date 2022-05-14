@@ -26,7 +26,7 @@ function Products() {
  
  console.log(count)
  let pieces=[1,2,3,4,5]
-  return (
+  return ( 
         <Container>
           <Row sm={3}>
           { filterProducts &&(
@@ -40,19 +40,16 @@ function Products() {
                             </Card.Body>
                             </Link>
                                 <Container className='orderbtn'>
-                                      <Button  className='btn-product mt-2 btn-success' variant="primary"  onClick={()=>handleClick(item)} >
-            
                                       {
-                                        baskets && baskets.every(product=>(
+                                        (!baskets || baskets.every(product=>(
                                         product.id!==item.id
-                                      ))  ? "Add basket": "Added"
+                                      )))  ? <Button  className='btn-product mt-2 btn-success' variant="primary" onClick={()=>handleClick(item)}> Add Basket</Button> :
+                                      <Button  className='btn-product mt-2 btn-secondary' variant="primary" >Added</Button>
                                       }
-
-                                      </Button>
-                                      <DropdownButton align="end" title="Piece" id="dropdown-menu-align-end">
+                                      <DropdownButton size="sm" align="end" title="Piece" id="dropdown-menu-align-end" className=''>
                                         {
                                           pieces.map((piece,key)=>(
-                                            <Dropdown.Item key={key} onClick={()=>setCount(piece)} eventKey={piece}>{piece}</Dropdown.Item>
+                                            <Dropdown.Item key={key}   onClick={()=>setCount(piece)} eventKey={piece}>{piece}</Dropdown.Item>
                                           ))
                                         }
                                       </DropdownButton>
