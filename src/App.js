@@ -38,7 +38,7 @@ function App() {
               <Route  exact path="/" element={<Home />} />
               <Route  path="/category/:category" element={<Products />} />
               <Route path="/:category/products/:id" element={<ProductDetail />} />
-              <Route  exact path="/basket" element={<Basket />} />
+              <Route path="/basket" element={<Basket />} />
               
             </Routes>
           </BrowserRouter>
