@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import {useSelector, useDispatch} from "react-redux"
-import {Card, Button, Container, Row, Col, Dropdown, DropdownButton} from "react-bootstrap"
+import {Card, Button, Container, Row, Col, Dropdown, DropdownButton, Badge} from "react-bootstrap"
 import {useParams, Link} from "react-router-dom"
 import {filtered, addBasket } from "./../../../redux/products/productsSlice"
 
@@ -9,22 +9,19 @@ function Products() {
   const dispatch=useDispatch()
   const filterProducts=useSelector(state=>state.product.filterProd)
   const baskets=useSelector(state=>state.product.basket)
-  const [basket, setBasket]=useState([])
   const [count, setCount]=useState(1)
 
   //refreshing in filtered function and run addBasket function when the page is refreshed, the category and basket changed
  useEffect(()=>{
   dispatch(filtered(category))
-  if(basket.length>0){
-    dispatch(addBasket(basket))
-  }
- },[dispatch, category, basket])
+ },[dispatch, category])
 
  const handleClick=(item)=>{
-   setBasket([item])
+   const newItem={...item}
+  newItem.piece=count
+  dispatch(addBasket([newItem]))
  }
  
- console.log(count)
  let pieces=[1,2,3,4,5]
   return ( 
         <Container>
@@ -34,9 +31,10 @@ function Products() {
                     <Col key={item.id}>
                         <Card   className="product-card">
                           <Link   to={`/${item.category}/products/${item.id}`} >
-                            <Card.Img variant="top" src={item.img} />
-                            <Card.Body >
-                              <Card.Title className='product-body' >{item.title}</Card.Title>
+                            <Card.Img variant="top" style={{borderRadius:"50%"}} src={item.img} />
+                            <Card.Body className='d-flex justify-content-around'>
+                              <Card.Title className='product-title' >{item.title}</Card.Title>
+                              <Badge className='product-text'>{item.price} tl</Badge>
                             </Card.Body>
                             </Link>
                                 <Container className='orderbtn'>
@@ -53,7 +51,6 @@ function Products() {
                                           ))
                                         }
                                       </DropdownButton>
-                                      
                                 </Container>
                           </Card>
                       </Col>
