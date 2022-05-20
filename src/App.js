@@ -13,9 +13,8 @@ function App() {
   const basket=useSelector(state=>state.product.basket)
   return (
       <div className='App-header'>
-          <BrowserRouter>
-             <Container className='nav-css'>
-                <Navbar fixed="top"  bg="light" expand="lg" >
+          <BrowserRouter>  
+                <Navbar  bg="light" expand="lg">
                     <Container>
                       <Navbar.Toggle aria-controls="basic-navbar-nav" />
                       <Navbar.Collapse id="basic-navbar-nav">
@@ -33,7 +32,7 @@ function App() {
                       </Navbar.Collapse>
                     </Container>
                   </Navbar>
-             </Container>
+             
             <Routes>
               <Route  exact path="/" element={<Home />} />
               <Route  path="/category/:category" element={<Products />} />
