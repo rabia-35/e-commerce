@@ -24,7 +24,7 @@ function Basket() {
   let sum=0
     if(basket){
       for(let i=0; i<basket.length; i++){
-        sum+=basket[i].price 
+        sum+=(basket[i].price * basket[i].piece)
     }
     }
 
@@ -72,7 +72,7 @@ function Basket() {
                   <tr key={order.id}>
                     <td>{order.title} </td>
                     <td>{order.price}</td>
-                    <td>1</td>
+                    <td>{order.piece}</td>
                     <td><Button variant='danger' className='btn btn-sm' onClick={()=>handleClick(order.id)}>X</Button></td>
                   </tr>
                   )))
