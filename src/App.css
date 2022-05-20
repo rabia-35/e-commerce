@@ -5,9 +5,7 @@
   align-items: center;
   justify-content: center;
 }
-.nav-css{
-  margin-bottom: 6%;
-}
+
 .category> img{
   border-radius: 50%;
   width: 300px;
@@ -71,9 +69,9 @@ a{
 .detail-img{
   width: 60%;
   border-radius: 2%;
-  box-shadow: 40px -16px #ddd;
+  box-shadow: 40px -30px rgb(193, 192, 192);
+}
+.basket-table{
+font-size: small;
+}
 
-}
-.detail-desc{
-  margin-left: -10%;
-}
