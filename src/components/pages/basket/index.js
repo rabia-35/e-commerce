@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {Table, Container, Button, Modal, Form, Badge} from "react-bootstrap"
+import {Table, Container, Row, Col, Button, Modal, Form, Badge} from "react-bootstrap"
 import { useSelector, useDispatch } from 'react-redux'
 import  {removeBasket } from "../../../redux/products/productsSlice"
 
@@ -47,21 +47,22 @@ function Basket() {
     
 
   return (
-    <Container className='mt-5'>
+    <Container  >
       {
         (basket.length===0 || !basket) && <>
-        <Badge bg="secondary" text="dark" className='mt-3'>There are no items in your basket</Badge>
+        <Badge bg="secondary" text="dark" >There are no items in your basket</Badge>
         </>
       }
+      <Row>
      {
        basket.length!==0 && <>
-        <Table  striped bordered hover  >
+              <Col xs="12" sm="8" >
+              <Table size="sm" striped bordered hover className="basket-table" >
           <thead >
             <tr>
-              
-              <th> Name</th>
-              <th> Price</th>
-              <th> Quantity</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -80,12 +81,13 @@ function Basket() {
               </tbody>
               
             </Table>
+              </Col>
             <div> Total Price:<strong>{sum} tl</strong></div>
-            <>
-            <Button variant="primary" onClick={handleShow}>Order</Button>
-            <Modal show={show} onHide={handleClose}>
+            <Col >
+            <Button variant="primary" onClick={handleShow} >Order</Button>
+            <Modal show={show} onHide={handleClose} >
               <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
+                <Modal.Title>Order Address</Modal.Title>
               </Modal.Header>
               <Modal.Body>
                 <Form >
@@ -117,9 +119,10 @@ function Basket() {
                 </Button>
               </Modal.Footer>
             </Modal>
-          </>
+          </Col>
        </>
      }
+     </Row>
     </Container>
   )
 }
