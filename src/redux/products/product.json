@@ -5,7 +5,7 @@
             "title":"Food 1",
             "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
-            "price":6,
+            "price":10,
             "piece":1
         },
         {
@@ -14,7 +14,7 @@
             "title":"Food 2",
             "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
-            "price":40,
+            "price":20,
             "piece":1
         },
         {
@@ -23,7 +23,7 @@
             "title":"Food 3",
             "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
-            "price":100,
+            "price":15,
             "piece":1
         },
         {
@@ -32,7 +32,7 @@
             "title":"Food 4",
             "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
-            "price":50,
+            "price":23,
             "piece":1
         },
         {
@@ -41,7 +41,7 @@
             "title":"Food 5",
             "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
-            "price":50,
+            "price":15,
             "piece":1
         },
         {
@@ -50,7 +50,7 @@
             "title":"Food 6",
             "img":"https://u7.uidownload.com/vector/522/949/vector-flat-icon-with-long-shadow-snack-crackers-vector-eps-ai-thumbnail.jpg",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
-            "price":50,
+            "price":24,
             "piece":1
         },
         {
@@ -59,7 +59,7 @@
             "title":"Beverage 1 ",
             "img":"https://cdn-icons-png.flaticon.com/512/820/820603.png",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
-            "price":100,
+            "price":10,
             "piece":1  
         },
         {
@@ -68,7 +68,7 @@
             "title":"Beverage 2",
             "img":"https://cdn-icons-png.flaticon.com/512/820/820603.png",
             "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis dicta ipsam id consectetur similique doloremque impedit accusantium! Asperiores consectetur, voluptas dolore veniam magni obcaecati recusandae incidunt, iure vitae id nobis!",
-            "price":50,
+            "price":20,
             "piece":1
         },
         {
@@ -131,7 +131,7 @@
             "title":"Technological 3",
             "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTvJNWJ39-FSd5tp6IeI_0U4ISAScc8goGXgW061IkQaSvHGb0ZVA6AN8XcDhi4kyeFZw&usqp=CAU",
             "description":"Trees live in your fan brush, but you have to scare them out. Just let this happen. We just let this flow right out of our minds. You're meant to have fun in life. Clouds are free. They just float around the sky all day and have fun.\n\nSee there how easy that is.",
-            "price":59999 ,
+            "price":8999 ,
             "piece":1
         },
         {
