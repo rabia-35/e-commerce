@@ -1,16 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import productJSON from "./product.json"
 
-/** if( !localStorage.basket){
-                localStorage.setItem("basket", JSON.stringify(items))
-             }
-             else{
-                let orders=JSON.parse(localStorage.getItem("basket"));
-                items.map(item=>{
-                    return orders.push(item)
-                 })
-                 localStorage.setItem("basket",JSON.stringify(orders))
-             } */
 
  export const productsSlice=createSlice({
      name:"product",
@@ -56,8 +46,7 @@ import productJSON from "./product.json"
             localStorage.setItem("basket", JSON.stringify(state.basket))
 
          },
-
-        
+         
      },
  })
 
