@@ -30,25 +30,26 @@ function ProductDetail() {
           <Col xs={12} sm={5} className="mt-5">
           <img  className="detail-img" alt='characterImage' src={detail[0].img} />
           </Col>
-          <Col className='detail-desc mt-5' >
-            <h5>{detail[0].title} </h5>
-            <p>  {detail[0].description}</p>
-            <p> <strong className='text-muted'>Price :</strong> {detail[0].price} tl</p>
-            <Container className='orderbtn'>
-                                      {
-                                        (!baskets || baskets.every(product=>(
-                                        product.id!==detail[0].id
-                                      )))  ? <Button  className='btn-product mt-2 btn-success' variant="primary" onClick={()=>handleClick(detail[0])}> Add Basket</Button> :
-                                      <Button  className='btn-product mt-2 btn-secondary' variant="primary" >Added</Button>
-                                      }
-                                      <DropdownButton size="sm" align="end" title="Piece" id="dropdown-menu-align-end" className=''>
-                                        {
-                                          pieces.map((piece,key)=>(
-                                            <Dropdown.Item key={key}   onClick={()=>setCount(piece)} eventKey={piece}>{piece}</Dropdown.Item>
-                                          ))
-                                        }
-                                      </DropdownButton>
-                                </Container>
+          <Col  xs={12} sm={6} className='my-3' >
+              <h5>{detail[0].title} </h5>
+              <p>  {detail[0].description}</p>
+              <p> <strong className='text-muted'>Price :</strong> {detail[0].price} tl</p>
+              <div className='d-flex justify-content-start'>
+                    {
+                      (!baskets || baskets.every(product=>(
+                      product.id!==detail[0].id
+                    )))  ? <Button  className='btn-sm mt-2 btn-success' variant="primary" onClick={()=>handleClick(detail[0])}> Add Basket</Button> :
+                    <Button  className='btn-sm mt-2 btn-secondary' variant="primary" >Added</Button>
+                    }
+
+                    <DropdownButton size="sm" align="end" title="Piece" id="dropdown-menu-align-end" className='mt-2'>
+                      {
+                        pieces.map((piece,key)=>(
+                          <Dropdown.Item key={key}   onClick={()=>setCount(piece)} eventKey={piece}>{piece}</Dropdown.Item>
+                        ))
+                      }
+                    </DropdownButton>
+                </div>
           </Col>
       </Row>
         )
