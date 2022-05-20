@@ -35,22 +35,26 @@ a{
   padding: 2%;
 }
 .product-card:hover{
-  width: 12.3rem;
+  width: 12.9rem;
   border: 2px solid rgb(183, 183, 183);
   
 }
 
-.product-body{
+.product-title{
   font-size: small;
   margin-top: -2%;
-  margin-bottom: -5%;
   color: black ;
+}
+.product-text{
+  background-color: rgb(248, 248, 41) !important;
+  color: black;
+  border-radius: 9%;
+  box-shadow: 10px -6px #ddd;
 }
 
 .btn-product{
   width: 70%;
   font-size: xx-small;
-  margin-bottom: 3%;
   margin-top: 0.5% !important;
 }
 .orderbtn{
@@ -61,7 +65,6 @@ a{
 }
 .dropdown{
   padding-left: 6%;
-  margin-bottom: 3%;
   margin-top: 0%;
 }
 
