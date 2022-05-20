@@ -25,6 +25,7 @@ function Products() {
  let pieces=[1,2,3,4,5]
   return ( 
         <Container>
+          <h4 className='my-2 mx-4'>{category}</h4>
           <Row sm={3}>
           { filterProducts &&(
             filterProducts.map(item=>(
