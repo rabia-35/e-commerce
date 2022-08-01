@@ -2,6 +2,9 @@ import {useState} from 'react'
 import {Table, Container, Row, Col, Button, Modal, Form, Badge} from "react-bootstrap"
 import { useSelector, useDispatch } from 'react-redux'
 import  {removeBasket } from "../../../redux/products/productsSlice"
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faStore} from "@fortawesome/free-solid-svg-icons"
 
 
 
@@ -37,27 +40,28 @@ function Basket() {
     
   if(isOrder){
     return(
-      <Container>
-        <div><Badge>Email</Badge>{email}</div>
-        <div><Badge>Address</Badge>{address}</div>
-        <div><Badge size="lg" variant="warning" >Your order has been received</Badge></div>
-      </Container>
+      <div className='is-order'>
+        <h4 className='mb-3'>Information Of Your Order Address</h4>
+        <div>{email}</div>
+        <div> {address}</div>
+        <div className='mt-4 fs-4'><Badge bg="success">Your order has been received successfully</Badge></div>
+      </div>
     )
   }
     
 
   return (
-    <Container  >
+    <Container className='my-5' >
       {
         (basket.length===0 || !basket) && <>
-        <Badge bg="secondary" text="dark" >There are no items in your basket</Badge>
+        <div className='basket-no' >There are no items in your basket</div>
         </>
       }
-      <Row>
+      <Row className='text-center d-flex justify-content-center'>
      {
        basket.length!==0 && <>
               <Col xs="12" sm="8" >
-              <Table size="sm" striped bordered hover className="basket-table" >
+              <Table size="lg" striped bordered hover className="fs-sm my-4" >
           <thead >
             <tr>
               <th>Name</th>
@@ -74,7 +78,7 @@ function Basket() {
                     <td>{order.title} </td>
                     <td>{order.price}</td>
                     <td>{order.piece}</td>
-                    <td><Button variant='danger' className='btn btn-sm' onClick={()=>handleClick(order.id)}>X</Button></td>
+                    <td><Button  className='btn-outline-dark btn-sm' onClick={()=>handleClick(order.id)}>X</Button></td>
                   </tr>
                   )))
                 }
@@ -84,7 +88,7 @@ function Basket() {
               </Col>
             <div> Total Price:<strong>{sum} tl</strong></div>
             <Col >
-            <Button variant="primary" onClick={handleShow} >Order</Button>
+            <Button   className='basket-btn my-3' onClick={handleShow} >Order</Button>
             <Modal show={show} onHide={handleClose} >
               <Modal.Header closeButton>
                 <Modal.Title>Order Address</Modal.Title>
@@ -114,7 +118,7 @@ function Basket() {
                 <Button variant="secondary" onClick={handleClose}>
                   Close
                 </Button>
-                <Button  variant="primary" onClick={handleSubmit}>
+                <Button  className='basket-btn' onClick={handleSubmit}>
                   Save Changes
                 </Button>
               </Modal.Footer>
@@ -122,6 +126,10 @@ function Basket() {
           </Col>
        </>
      }
+     <Link to="/" className='text-center fs-5 my-5 ' >
+     <FontAwesomeIcon icon={faStore} color="tomato" className="me-2"/>
+      <span>Keep Shopping</span>
+      </Link>
      </Row>
     </Container>
   )

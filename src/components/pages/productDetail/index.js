@@ -23,14 +23,14 @@ function ProductDetail() {
   let pieces=[1,2,3,4,5]
   
   return (
-    <Container>
+    <Container className='product-detail'>
       {
         detail &&(
           <Row >
-          <Col xs={12} sm={5} className="mt-5">
+          <Col xs={12} sm={5} >
           <img  className="detail-img" alt='characterImage' src={detail[0].img} />
           </Col>
-          <Col  xs={12} sm={6} className='my-3' >
+          <Col  xs={12} sm={6}  >
               <h5>{detail[0].title} </h5>
               <p>  {detail[0].description}</p>
               <p> <strong className='text-muted'>Price :</strong> {detail[0].price} tl</p>
@@ -38,14 +38,14 @@ function ProductDetail() {
                     {
                       (!baskets || baskets.every(product=>(
                       product.id!==detail[0].id
-                    )))  ? <Button  className='btn-sm mt-2 btn-success' variant="primary" onClick={()=>handleClick(detail[0])}> Add Basket</Button> :
-                    <Button  className='btn-sm mt-2 btn-secondary' variant="primary" >Added</Button>
+                    )))  ? <Button size="lg" className='btn mt-2 btn-outline-warning px-5' onClick={()=>handleClick(detail[0])}> Add Basket</Button> :
+                    <Button variant='secondary' className='btn-sm mt-2 px-5' >Added</Button>
                     }
 
-                    <DropdownButton size="sm" align="end" title="Piece" id="dropdown-menu-align-end" className='mt-2'>
+                    <DropdownButton align="end" title="Piece" variant="dark" className='mt-2'>
                       {
                         pieces.map((piece,key)=>(
-                          <Dropdown.Item key={key}   onClick={()=>setCount(piece)} eventKey={piece}>{piece}</Dropdown.Item>
+                          <Dropdown.Item key={key}  onClick={()=>setCount(piece)} eventKey={piece}>{piece}</Dropdown.Item>
                         ))
                       }
                     </DropdownButton>

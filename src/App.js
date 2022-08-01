@@ -2,17 +2,20 @@ import './App.css';
 import { BrowserRouter, Routes, Route,Link} from "react-router-dom";
 import { Container,Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import Home from "./components/pages/home"
+import Footer from "./components/footer"
 import Products from "./components/pages/products"
 import ProductDetail from "./components/pages/productDetail"
 import Basket from "./components/pages/basket"
 import {useSelector} from "react-redux"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
 
 
 /** */
 function App() {
   const basket=useSelector(state=>state.product.basket)
   return (
-      <div className='App-header'>
+      <div className='App'>
           <BrowserRouter>  
                 <Navbar  bg="light" expand="lg">
                     <Container>
@@ -28,12 +31,15 @@ function App() {
                           </NavDropdown>
                           
                         </Nav>
-                        <Link to="/basket" className="ms-auto btn btn-sm btn-warning ">Basket {basket!==null && (basket.length)}</Link>
+                          <Link to="/basket" className="ms-auto basket-link">
+                            <FontAwesomeIcon  icon={faBasketShopping} className="me-2" />
+                            Basket {basket!==null && (basket.length)}
+                          </Link>
                       </Navbar.Collapse>
                     </Container>
                   </Navbar>
              
-            <Routes>
+            <Routes >
               <Route  exact path="/" element={<Home />} />
               <Route  path="/category/:category" element={<Products />} />
               <Route path="/:category/products/:id" element={<ProductDetail />} />
@@ -41,6 +47,7 @@ function App() {
               
             </Routes>
           </BrowserRouter>
+          <Footer />
       </div>
       
     

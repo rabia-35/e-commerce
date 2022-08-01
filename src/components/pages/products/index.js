@@ -25,16 +25,17 @@ function Products() {
  let pieces=[1,2,3,4,5]
   return ( 
         <Container>
-          <h4 className='my-2 mx-4'>{category}</h4>
-          <Row sm={3}>
+          <h4 className='mt-4 mx-4 text-center'>{category}</h4>
+          <p className='products-text text-muted'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime id nobis!</p>
+          <Row xs={2} sm={4}>
           { filterProducts &&(
             filterProducts.map(item=>(
                     <Col key={item.id}>
                         <Card   className="product-card">
                           <Link   to={`/${item.category}/products/${item.id}`} >
-                            <Card.Img variant="top" style={{borderRadius:"50%"}} src={item.img} />
-                            <Card.Body className='d-flex justify-content-around'>
-                              <Card.Title className='product-title' >{item.title}</Card.Title>
+                            <Card.Img className="product-img" variant="top"  src={item.img} />
+                            <Card.Body   className='d-flex justify-content-around info'>
+                              <Card.Title  className='product-title' >{item.title}</Card.Title>
                               <Badge className='product-text'>{item.price} tl</Badge>
                             </Card.Body>
                             </Link>
@@ -42,13 +43,13 @@ function Products() {
                                       {
                                         (!baskets || baskets.every(product=>(
                                         product.id!==item.id
-                                      )))  ? <Button  className='btn-product mt-2 btn-success' variant="primary" onClick={()=>handleClick(item)}> Add Basket</Button> :
-                                      <Button  className='btn-product mt-2 btn-secondary' variant="primary" >Added</Button>
+                                      )))  ? <Button  className='btn-outline-warning btn-product mt-2' onClick={()=>handleClick(item)}> Add Basket</Button> :
+                                      <Button variant='secondary'  className='btn-product mt-2' >Added</Button>
                                       }
-                                      <DropdownButton size="sm" align="end" title="Piece" id="dropdown-menu-align-end" className=''>
+                                      <DropdownButton size="sm" align="end" title="Piece" variant='dark' >
                                         {
                                           pieces.map((piece,key)=>(
-                                            <Dropdown.Item key={key}   onClick={()=>setCount(piece)} eventKey={piece}>{piece}</Dropdown.Item>
+                                            <Dropdown.Item   key={key}   onClick={()=>setCount(piece)} eventKey={piece}>{piece}</Dropdown.Item>
                                           ))
                                         }
                                       </DropdownButton>
