@@ -1,11 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 import productJSON from "./product.json"
+import { nanoid } from "@reduxjs/toolkit";
 
 
  export const productsSlice=createSlice({
      name:"product",
      initialState:{
-        items:[...productJSON],
+        items:[...productJSON, ...productJSON].map(img=>({...img, id:nanoid()})),
         filterProd:[],
         basket:JSON.parse(localStorage.getItem("basket")),
         status:"idle",
