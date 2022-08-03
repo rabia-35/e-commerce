@@ -10,4 +10,5 @@
 Products are ordered on the Basket page and the ordered products are deleted from localStorage.</p>
 
 ### Project Video
-https://user-images.githubusercontent.com/85495654/169591098-3c199d14-c624-474f-969d-6f2d0ba2ac44.mp4
+
+https://user-images.githubusercontent.com/85495654/182680582-ead51827-121d-4eb2-b191-3301aedae41c.mp4
