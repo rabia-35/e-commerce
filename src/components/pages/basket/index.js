@@ -7,14 +7,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faStore} from "@fortawesome/free-solid-svg-icons"
 
 
-
 function Basket() {
   const basket=useSelector(state=>state.product.basket)
   const dispatch=useDispatch()
   const [email, setEmail]=useState("");
   const [address, setAddress]=useState("")
   const [show, setShow] = useState(false);
-  const [isOrder, setIsOrder]=useState(false)
+  const [isOrder, setIsOrder]=useState([])
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -32,22 +31,29 @@ function Basket() {
     }
 
     const handleSubmit=()=>{
-      localStorage.setItem("basket", JSON.stringify([]))  
-      setShow(false);
-      setIsOrder(true)
-        
+      if(email && address){
+        setShow(false);
+        localStorage.setItem("basket", JSON.stringify([]))  
+        setIsOrder([{orderEmail:email, orderAddress:address}])
+      } 
+      
     }
     
-  if(isOrder){
+  if(isOrder.length>0){
     return(
       <div className='is-order'>
         <h4 className='mb-3'>Information Of Your Order Address</h4>
         <div>{email}</div>
         <div> {address}</div>
-        <div className='mt-4 fs-4'><Badge bg="success">Your order has been received successfully</Badge></div>
+        <div className='my-4 fs-4'><Badge bg="success">Your order has been received successfully</Badge></div>
+        <Link to="/" className='text-center fs-5 my-5 ' >
+          <FontAwesomeIcon icon={faStore} color="tomato" className="me-2"/>
+          <span>Keep Shopping</span>
+        </Link>
       </div>
     )
   }
+ 
     
 
   return (
@@ -114,6 +120,7 @@ function Basket() {
                   </Form.Group>
                 </Form>
               </Modal.Body>
+              <p className='text-center' style={{color:"red"}} > *Enter All The Information Of Your Order</p>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
                   Close
