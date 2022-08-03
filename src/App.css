@@ -77,7 +77,6 @@ a{
   top: 150px;
 }
 .product-card:hover{
-  width: 13.1rem;
   border: 1px solid rgb(214, 212, 212)
 }
 .product-title{
@@ -208,7 +207,7 @@ a{
 }
 .is-order{
   text-align: center;
-  margin: 155px auto;
+  margin: 125px auto;
 }
 a > span:hover{
   color: tomato;
@@ -217,9 +216,9 @@ a > span:hover{
 /*  Mobile  */
 @media (max-width: 575.98px) {
   .product-card{
-    width: 10rem;
+    width: 9rem;
     height: 90%;
-    margin-left: 1%;
+    margin-left: -2%;
     margin-bottom: 70%;
   }
   .product-title{
@@ -229,6 +228,11 @@ a > span:hover{
     top:150px;
     padding: 4px;
   }
-  
+  .d-block{
+    height: 200px;
+  }
+  .btn{
+    padding: 0;
+  }
 }
 
