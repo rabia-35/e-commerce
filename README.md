@@ -1,9 +1,11 @@
 # e-Commerce
 * React
+* React Hooks
 * Redux
 * React-Router
-* React-Bootstrap
+* React-Bootstrap / Bootstrap
 * LocalStorage
+* Fortawesome
 ---
 ## Project information
 <p>There are products divided into three categories on the main page. There are product pages and detail pages. Adding and deleting products are provided permanently with localStorage.
