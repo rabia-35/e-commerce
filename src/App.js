@@ -11,13 +11,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
 
 
-/** */
 function App() {
   const basket=useSelector(state=>state.product.basket)
   return (
       <div className='App'>
           <BrowserRouter>  
-                <Navbar  bg="light" expand="lg">
+                <Navbar  bg="light" expand="sm">
                     <Container>
                       <Navbar.Toggle aria-controls="basic-navbar-nav" />
                       <Navbar.Collapse id="basic-navbar-nav">
@@ -43,8 +42,7 @@ function App() {
               <Route  exact path="/" element={<Home />} />
               <Route  path="/category/:category" element={<Products />} />
               <Route path="/:category/products/:id" element={<ProductDetail />} />
-              <Route path="/basket" element={<Basket />} />
-              
+              <Route exact path="/basket" element={<Basket />} />
             </Routes>
           </BrowserRouter>
           <Footer />
